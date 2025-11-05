@@ -1,6 +1,6 @@
-# Fenrir 代码审计工具 - Java 版本
+# CodeAudit-MCP代码审计工具 - Java 版本
 
-Fenrir 是一个基于 MCP 协议与 AST 技术的代码审计工具，这是其 Java 实现版本。
+CodeAudit-MCP 是一个基于 MCP 协议与 AST 技术的代码审计工具，这是其 Java 实现版本。
 
 ## 功能特性
 
@@ -20,7 +20,7 @@ Fenrir 是一个基于 MCP 协议与 AST 技术的代码审计工具，这是其
 ### 1. 克隆或下载项目
 
 ```bash
-cd Fenrir-CodeAuditTool-Java
+cd codeAudit-MCP
 ```
 
 ### 2. 编译项目
@@ -29,20 +29,20 @@ cd Fenrir-CodeAuditTool-Java
 mvn clean package
 ```
 
-编译完成后，可执行 JAR 文件位于 `target/fenrir-code-audit-tool-1.2.0-jar-with-dependencies.jar`
+编译完成后，可执行 JAR 文件位于 `target/codeAudit-mcp-1.2.0.jar`
 
 ## 使用方法
 
 ### 1. 运行服务器
 
 ```bash
-java -jar target/fenrir-code-audit-tool-1.2.0-jar-with-dependencies.jar -i "/path/to/code/repository"
+java -jar target/target/codeAudit-mcp-1.2.0.jar -i "/path/to/code/repository"
 ```
 
 或者使用远程仓库：
 
 ```bash
-java -jar target/fenrir-code-audit-tool-1.2.0-jar-with-dependencies.jar -remote "git:https://github.com/user/repo.git" -branch "main"
+java -jar target/target/codeAudit-mcp-1.2.0.jar -remote "git:https://github.com/user/repo.git" -branch "main"
 ```
 
 ### 2. 使用 MCP 客户端
@@ -111,15 +111,15 @@ remote_repository:
   type: ""
   url: ""
   branch: "main"
-  target_path: "/tmp/fenrir_remote"
+  target_path: "/tmp/codeAudit_remote"
   auto_clean: true
 ```
 
 ## 项目结构
 
 ```
-Fenrir-CodeAuditTool-Java/
-├── src/main/java/com/fenrir/
+codeAudit-mcp/
+├── src/main/java/com/codeaudit/
 │   ├── config/          # 配置管理
 │   ├── core/            # 核心功能（ASTIndex, QueryEngine, ParserManager）
 │   ├── model/           # 数据模型

@@ -190,7 +190,7 @@ public class Application {
                   type: ""  # zip, git, local
                   url: ""
                   branch: "main"
-                  target_path: "/tmp/fenrir_remote"
+                  target_path: "/tmp/codeAudit_remote"
                   auto_clean: true
                 """;
             Files.writeString(configPath, defaultYaml);

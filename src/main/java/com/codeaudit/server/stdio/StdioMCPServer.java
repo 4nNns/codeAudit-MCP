@@ -64,7 +64,7 @@ public class StdioMCPServer {
         ObjectNode result = objectMapper.createObjectNode();
         result.put("protocolVersion", "2024-11-05");
         result.put("serverInfo", objectMapper.createObjectNode()
-                .put("name", "fenrir")
+                .put("name", "codeAudit")
                 .put("version", "1.2.0"));
         
         ObjectNode capabilities = objectMapper.createObjectNode();

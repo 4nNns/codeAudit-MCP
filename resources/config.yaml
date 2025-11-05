@@ -18,6 +18,6 @@ remote_repository:
   type: ""  # zip, git, local
   url: ""
   branch: "main"
-  target_path: "/tmp/fenrir_remote"
+  target_path: "/tmp/codeAudit_remote"
   auto_clean: true
 

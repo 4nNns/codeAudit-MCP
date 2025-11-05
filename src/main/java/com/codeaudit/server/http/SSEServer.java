@@ -30,7 +30,7 @@ public class SSEServer {
 
     public SSEServer(Application app) {
         this.app = app;
-        this.mcpServer = new MCPServer("Fenrir - 基于 MCP 的自动化代码审计工具", "1.2.0");
+        this.mcpServer = new MCPServer("CodeAudit - 基于 MCP 的自动化代码审计工具", "1.2.0");
         this.objectMapper = new ObjectMapper();
         registerTools();
     }
