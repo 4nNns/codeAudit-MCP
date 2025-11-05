@@ -36,13 +36,13 @@ mvn clean package
 ### 1. 运行服务器
 
 ```bash
-java -jar target/target/codeAudit-mcp-1.2.0.jar -i "/path/to/code/repository"
+java -jar target/codeAudit-mcp-1.2.0.jar -i "/path/to/code/repository"
 ```
 
 或者使用远程仓库：
 
 ```bash
-java -jar target/target/codeAudit-mcp-1.2.0.jar -remote "git:https://github.com/user/repo.git" -branch "main"
+java -jar target/codeAudit-mcp-1.2.0.jar -remote "git:https://github.com/user/repo.git" -branch "main"
 ```
 
 ### 2. 使用 MCP 客户端
